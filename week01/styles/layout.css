@@ -46,7 +46,7 @@ aside{
 }
 footer{
     background-color: rgb(84, 82, 82);
-    grid-column: -1/4;
+    grid-column: 4/1;
     height: 80px;
     color: aliceblue;
     display: flex;
