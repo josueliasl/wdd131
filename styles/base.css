@@ -5,8 +5,7 @@
 h1 {
     background-color: steelblue;
     font-family: "Mulish", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
+
     color: white;
     text-align: center;
     padding: 30px
@@ -100,8 +99,6 @@ footer{
     padding: 20px;
     font-size: larger;
     font-family: "Mulish", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
 }
 #lastModified{
     color:yellow;
