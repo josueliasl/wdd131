@@ -1,15 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Josue Leyva">
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Josue Elias Leyva Gonzalez is a Software Developer">
+    <meta name="description"
+    content="WDD 131 - Dynamic Web Fundamentals Josue Elias Leyva Gonzalez is a Software Developer">
     <title>WDD 131 - Dynamic Web Fundamentals - Josue Leyva</title>
     <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js"></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+    <header>
+        <h1> WDD 131: Dynamic Web Fundamentals - <span class="name">Josue E. Leyva</span></h1>
+        <nav>
+            <a class="pages" href="https://www.linkedin.com/in/josue-e/" target="_blank" title="linkedin">Linkedin</a>
+            <a class="pages" href="https://byui.instructure.com/" target="_blank" title="i-learn">I-Learn</a>
+            <a class="pages" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" title="scripture">Scripture</a>
+            <a class="pages" href="#" target="_blank" title="final-project">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        
+        <section class="card">
+            <div id="about-me">
+                <h3>About Me</h3>
+                <div class="about-me">
+                <p>Josue Leyva is a bilingual professional with C1 English skills and a native Spanish background. With
+                    experience in customer service, teaching, and tech, he is driven by a passion for programming and
+                    building a career in the tech industry. Currently studying computer science at BYU-I, he values
+                    problem-solving, cross-cultural communication, and efficiency. Josue is eager to create impactful
+                    solutions and pursue success in tech and business.</p>
+                <img src="images/Me-pro.jpg" alt="Josue's Picture" width="110">
+                </div>
+            </div>
+            <div class="mexico">
+                <img src="images/mexican-flag.jpg" alt="The Mexican Flag" width="250">
+                <p>Mexico boasts a strong and growing economy, driven by industries like manufacturing, energy, and technology. As
+                    one of Latin America’s largest economies, it holds a strategic trade position, especially with its U.S. and
+                    Canada partnerships. Trade agreements have boosted industrial growth and job creation. Additionally, Mexico’s
+                    tech and startup sectors are rapidly expanding, drawing investment and fostering innovation. With a skilled
+                    workforce and abundant resources, Mexico is well-positioned for continued economic resilience.</p>
+            </div>
+        </section>
+        <section class="card" id="web-development">
+            <h3>Web Dev Resources</h3>
+            <a class="websites" href="https://github.com/josueliasl" target="_blank" title="Portfolio">My Portfolio</a>
+            <a class="websites" href="https://josueliasl.github.io/wdd130-old-one/wwr/" target="_blank" title="First Rafting Site">Old Rafting Site</a>
+            <a class="websites" href="https://josueliasl.github.io/wdd130/wwr/index.html" target="_blank" title="New Rafting Site">New Rafting Site</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Josue Leyva, Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
