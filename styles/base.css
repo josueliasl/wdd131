@@ -25,7 +25,7 @@ nav a{
     color: white;
     font-family: "Mulish", sans-serif;
     font-size: larger;
-    align-items: center
+    align-items: center;
 }
 nav a:hover{
     color: rgb(40, 40, 40);
@@ -36,7 +36,7 @@ main{
     display: grid;
     align-items: stretch;
     justify-items: center;
-    grid-template-columns: 2fr 1fr;;
+    grid-template-columns: 2fr 1fr;
     margin:20px;
     max-width: 1300px;
 
