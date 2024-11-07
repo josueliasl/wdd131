@@ -11,8 +11,9 @@ header{
     background-color: var(--main-color);
     color: white;
     padding: 30px;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: space-around;
     justify-content: space-around;
 }
 h1{
