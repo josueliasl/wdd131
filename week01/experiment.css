@@ -1,0 +1,42 @@
+.calculator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: steelblue;
+    text-align: center;
+}
+input{
+    padding: 10px;
+    font-size: larger;
+}
+p{
+    font-size: 2.5em;
+    color: rgb(42, 89, 128);
+}
+input{
+    border: 1.5px solid;
+    border-radius: 10px;
+    color: rgb(42, 89, 128);
+}
+::placeholder{
+    color: rgb(42, 89, 128);
+}
+button{
+    background-color: steelblue;
+    border: none;
+    color: white;
+    width: 40px;
+    height: 30px;
+    font-size: larger;
+}
+#result{
+    border: 1.5px solid steelblue;
+    width: 80px;
+    height: 45px;;
+    text-align: center;
+    border-radius: 10px;
+}
