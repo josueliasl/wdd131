@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scripts/debugging.js" defer></script>
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width:1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width:500px)">
+                <img src="images/hero-small.webp" alt="Temple from San Diego" width="500" height="250">
+            </picture> 
+        </div>
+        <form>
+            <label for="input">Tell me your number</label>
+            <input type="number" id="input">
+        </form>
+        <p id="result"></p>
+    </main>
+</body>
+</html>
+

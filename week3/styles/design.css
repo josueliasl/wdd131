@@ -1,0 +1,54 @@
+body {
+	font-family: Roboto, helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+	max-width: 760px;
+	margin: 0 auto;
+}
+.banner{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 1 rem;
+    border: 1px solid rgb(148, 147, 147);
+}
+h1 {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+}
+
+main {
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:30px
+}
+
+h2 {
+	color: navy;
+	text-align:center;
+    grid-column: -1/1;
+}
+h3{
+    margin-bottom: .5rem;
+}
+article p {
+	text-align: left;
+}
+
+
+.callout {
+	color: black;
+	background-color:rgba(212, 208, 208, 0.557);
+    padding:20px;
+    font-size: larger;
+    grid-column: -1/1;
+}
+
+footer {
+	margin-top: 1rem;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: smaller;
+	text-align: right;
+}
