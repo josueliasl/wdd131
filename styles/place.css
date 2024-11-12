@@ -12,7 +12,7 @@ footer, header{
     text-align: center;
     padding: 15px;
     color: white;
-    font-size: larger;
+    font-size: 2em;
 }
 
 header{
@@ -33,7 +33,8 @@ h1::first-letter{color:var(--second-color); font-family:Verdana, Geneva, Tahoma,
 h2{
     text-align: center;
     margin-top:20px;
-    color:var(--second-color)
+    color:var(--second-color);
+    font-size: 3em;
 }
 .weather{
     display:grid;
