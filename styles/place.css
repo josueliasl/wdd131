@@ -1,0 +1,22 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: "Afacad Flux", serif;
+}
+footer, header{
+    background-color: rgb(210, 5, 5);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+header{
+    border-bottom: 20px solid rgb(5, 100, 5);
+}
+
+.hero img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+}
