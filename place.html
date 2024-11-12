@@ -21,7 +21,9 @@
     <header>
         <h1>Los Cabos</h1>
     </header>
+    <div class="back">
     <main>
+        <div class="info">
         <div class="hero">
             <picture>
                 <source srcset="images/el_arco_bigger.webp" media='(min-width: 500px)'>
@@ -30,22 +32,21 @@
             </picture>
         </div>
     </main>
-    <section>
+    <div class="sections">
+    <section class="data">
         <h2>Data</h2>
-        <div>
             <p><b>Area:</b> 3,451 sq km</p>
             <p><b>Population:</b> 351,111</p>
             <p><b>Population:</b> 351,111</p>
-            <p><b>Capital:</b> Part of the municipality of Los Cabos</p>
+            <p><b>Capital:</b> Los Cabos</p>
             <p><b>Languages:</b> Spanish</p>
-            <p><b>Currency:</b> Mexican Peso (MXN)</p>
-            <p><b>Time Zone:</b> UTC-7 (Mountain Standard Time), with adjustments during Daylight Saving Time</p>
+            <p><b>Currency:</b>MXN</p>
+            <p><b>Time Zone:</b> UTC-7 </p>
             <p><b>Calling Code:</b> +52</p>
             <p><b>Internet TLD:</b> .mx</p>
-        </div>
     </section>
     <section class="weather">
-        <h2>Weather</h2>
+        <h2 id="weather">Weather</h2>
         <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
             <g data-name="图层 1" id="图层_1">
                 <path class="cls-1" d="M404.07,234.75c9.67,0,9.65,15,0,15H370.42c-9.67,0-9.65-15,0-15Z" />
@@ -119,11 +120,14 @@
                 <path class="cls-1" d="M336,395.47c9.65,0,9.67-15,0-15s-9.67,15,0,15Z" />
             </g>
         </svg>
-        <p><b>Temperature:</b> 29°C during the day and 18°C at night</p>
+        <p><b>Temperature:</b> 29°C - 18°C</p>
         <p><b>Conditions:</b> Mostly sunny, clear skies</p>
         <p id="windChill"></p>
         <p><b>Humidity:</b> 45%</p>
     </section>
+    </div>
+    </div>
+    </div>
     <footer>
         <p>&copy;<span id="currentYear"></span> Josue E. Leyva, Mexico</p>
         <p id="lastModified"></p>
