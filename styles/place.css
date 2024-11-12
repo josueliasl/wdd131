@@ -3,22 +3,44 @@
     padding: 0;
     font-family: "Afacad Flux", serif;
 }
+:root{
+    --main-color: rgb(25, 130, 196);
+    --second-color:rgb(27, 71, 125);
+}
 footer, header{
-    background-color: rgb(210, 5, 5);
-    color: white;
+    background-color: var(--main-color);
     text-align: center;
     padding: 15px;
-}
-header{
-    border-bottom: 20px solid rgb(5, 100, 5);
+    color: white;
+    font-size: larger;
 }
 
+header{
+    border-bottom: 20px solid;
+    color: var(--second-color);
+}
+h1{
+    color: white;
+}
 .hero img {
-    width: 80%;
+    width: 70%;
     height: 100%;
     object-fit: cover;
     display: flex;
     justify-content: center;
+}
+h2{
+    text-align: center;
+    margin-top:20px;
+    color:var(--second-color)
+}
+.weather{
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+svg{
+    width:200px;
 }
 .cls-1 {
     fill: #f8b62d;
@@ -26,15 +48,15 @@ header{
 
 .cls-1,
 .cls-2 {
-    stroke: #231815;
+    stroke: #2d2321;
     stroke-miterlimit: 10;
 }
 
 .cls-2,
 .cls-4 {
-    fill: #231815;
+    fill: #b5a6a2;
 }
 
 .cls-3 {
-    fill: #fff;
+    fill: #ffffff;
 }
