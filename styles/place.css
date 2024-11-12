@@ -22,7 +22,8 @@ header{
 h1{
     color: white;
 }
-h1::first-letter{color:var(--second-color); font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: larger;}
+h1::after{content:"!";
+    color:var(--second-color); font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: larger;}
 .hero img {
     width: 70%;
     height: 100%;
