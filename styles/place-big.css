@@ -24,8 +24,6 @@
     top:160px;
     grid-template-rows: 1fr 1fr;
     width:100%;
-
-    justify-items: space-around;
 }
 
   }
