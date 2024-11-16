@@ -116,14 +116,6 @@ const temples = [
 
 createTempleCard(temples);
 
-const old = document.querySelector('#old');
-old.addEventListener('click', () => {
-    createTempleCard(temples.filter(temple => {
-        const dedicatedYear = new Date(temple.dedicated).getFullYear();
-        return dedicatedYear >= 1836 && dedicatedYear <= 1999;
-    }));
-});
-
 function createTempleCard(filteredTemples) {
     const templesContainer = document.querySelector('.temples');
     templesContainer.innerHTML = ""; // Clear the container at the start
@@ -160,3 +152,33 @@ function createTempleCard(filteredTemples) {
         templesContainer.appendChild(card);
     });
 }
+
+let oldTemplesButton = document.querySelector('#old');
+oldTemplesButton.addEventListener('click',() => {
+    let oldTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear()<1979);
+    createTempleCard(oldTemples)
+})
+
+let newTemplesButton = document.querySelector('#new');
+newTemplesButton.addEventListener('click', () =>{
+    let newTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear()>1980)
+    createTempleCard(newTemples)
+})
+
+let largeTemplesButton = document.querySelector('#large');
+largeTemplesButton.addEventListener('click', () =>{
+    let largeTemples = temples.filter(temple => temple.area>9000)
+    createTempleCard(largeTemples)
+})
+
+let smallTemplesButton = document.querySelector('#small');
+smallTemplesButton.addEventListener('click', () =>{
+    let smallTemples = temples.filter(temple => temple.area <9000)
+    createTempleCard(smallTemples)
+})
+let homeTemplesButton = document.querySelector('#home');
+homeTemplesButton.addEventListener('click', () =>{
+    let home = temples.filter(temple => temple)
+    createTempleCard(home)
+})
+

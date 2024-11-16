@@ -32,6 +32,15 @@
     .navigation a{
         text-align: center;
     }
+    .navigation a:hover{
+        color: var(--main-color);
+        background-color: white;
+        
+    }
+    .navigation a:active{
+        color: yellow;
+        background-color: var(--main-color);
+    }
     #menu{
         display: none;
     }
