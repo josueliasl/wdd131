@@ -6,6 +6,7 @@
 }
 :root{
     --main-color: rgb(64, 22, 103);
+    --background: rgb(179, 176, 176);
 }
 header{
     background-color: var(--main-color);
@@ -52,19 +53,19 @@ h2{
     color: black;
     margin-top: 20px;
 }
-main{
+.temples{
     display: grid;
     grid-template-columns: 1fr;
-    align-items: center;
-    justify-items: center;
+    gap:10px;
 }
 
-figure img{
-    max-width: 300px;
+section h3{
+    font-size: 2em;
 }
-figcaption{
+section{
+    background-color: var(--background);
     text-align: center;
-    color: rgb(70, 19, 117);
+    padding:25px;
     font-size: larger;
 }
 footer{

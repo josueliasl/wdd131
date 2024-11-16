@@ -7,6 +7,7 @@
     }
     :root{
         --main-color: rgb(64, 22, 103);
+        --background: rgb(179, 176, 176);
     }
     header{
         background-color: var(--main-color);
@@ -34,13 +35,7 @@
     #menu{
         display: none;
     }
-    section{
-        max-width: 1400px;
-        align-items: center;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;
-    }
+
     h2{
         text-align: center;
         color: black;
@@ -48,13 +43,21 @@
         margin-top: 30px;
         margin-bottom: 20px;
     }
-    
-    figure img{
-        max-width: 300px;
+    .temples{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
+        gap:10px
     }
-    figcaption{
+
+
+    section{
+        background-color: var(--background);
         text-align: center;
-        color: rgb(70, 19, 117);
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding:25px;
         font-size: larger;
     }
     footer{

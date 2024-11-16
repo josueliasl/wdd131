@@ -1,16 +1,19 @@
-const mainnav = document.querySelector('.navigation')
+let d = new Date();
+
+document.getElementById("currentYear").innerHTML = `&copy;${d.getFullYear()}`;
+document.querySelector("#lastModified").textContent = `Last Modification: ${document.lastModified}`;
+
 const hambutton = document.querySelector('#menu');
 
 hambutton.addEventListener('click', () => {
-    mainnav.classList.toggle('show');
-    hambutton.classList.toggle('show')
-})
+    document.querySelector('h1').classList.toggle('show');
+    document.querySelector('#navigation').classList.toggle('show');
+    hambutton.classList.toggle('show');
+});
 
-let currentYear = new Date().getFullYear();
-let lastModified = document.lastModified;
-
-document.getElementById("currentYear").textContent = currentYear;
-document.getElementById("lastModified").textContent = `Last Modification: ${lastModified}`;
+function toggleActive(element) {
+    element.classList.toggle('active');
+}
 
 const temples = [
     {
@@ -69,7 +72,6 @@ const temples = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-    // Add more temple objects here...
     {
         templeName: 'Provo City Center Temple',
         location: 'Provo, UT USA',
@@ -86,7 +88,7 @@ const temples = [
         imageUrl:
             'https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/2019/400x250/2-Rome-Temple-2190090.jpg'
     },
-        {
+    {
         templeName: 'Nauvoo Illinois Temple',
         location: 'Nauvoo IL USA',
         dedicated: '2002, June, 27',
@@ -94,5 +96,67 @@ const temples = [
         imageUrl:
             'https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/nauvoo-illinois/400x250/nauvoo-temple-756499-wallpaper.jpg'
     },
-
+    {
+        templeName: 'Philadelphia Pennsylvania Temple',
+        location: 'Philadelphia PA US',
+        dedicated: '2016 September, 18',
+        area: 61466,
+        imageUrl:
+            'https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/philadelphia-pennsylvania/400x250/philadelphia-pennsylvania-temple-exterior-1775822-wallpaper.jpg'
+    },
+    {
+        templeName: 'St. George Utah Temple',
+        location: 'St. George UT USA',
+        dedicated: '1877, April, 6',
+        area: 143969,
+        imageUrl:
+            'https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-george-utah/400x250/st-george-temple-758796-wallpaper.jpg'
+    },
 ];
+
+createTempleCard(temples);
+
+const old = document.querySelector('#old');
+old.addEventListener('click', () => {
+    createTempleCard(temples.filter(temple => {
+        const dedicatedYear = new Date(temple.dedicated).getFullYear();
+        return dedicatedYear >= 1836 && dedicatedYear <= 1999;
+    }));
+});
+
+function createTempleCard(filteredTemples) {
+    const templesContainer = document.querySelector('.temples');
+    templesContainer.innerHTML = ""; // Clear the container at the start
+
+    // If no temples match the filter, display a message
+    if (filteredTemples.length === 0) {
+        templesContainer.innerHTML = "<p>No temples found for the selected filter.</p>";
+        return;
+    }
+
+    // Iterate over all temples and create cards
+    filteredTemples.forEach(temple => {
+        let card = document.createElement('section');
+        let name = document.createElement('h3');
+        let location = document.createElement('p');
+        let dedication = document.createElement('p');
+        let area = document.createElement('p');
+        let img = document.createElement('img');
+
+        name.textContent = temple.templeName;
+        location.innerHTML = `<span class='label'><strong>Location:</strong></span> ${temple.location}`;
+        dedication.innerHTML = `<span class='label'><strong>Dedicated:</strong></span> ${temple.dedicated}`;
+        area.innerHTML = `<span class='label'><strong>Size:</strong></span> ${temple.area} sq ft`;
+        img.setAttribute('src', temple.imageUrl);
+        img.setAttribute("alt", `${temple.templeName} Temple`);
+        img.setAttribute('loading', 'lazy');
+
+        card.appendChild(name);
+        card.appendChild(location);
+        card.appendChild(dedication);
+        card.appendChild(area);
+        card.appendChild(img);
+
+        templesContainer.appendChild(card);
+    });
+}
