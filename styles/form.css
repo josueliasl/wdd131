@@ -1,7 +1,12 @@
-h1, p, label{
-  font-family: "Mulish", serif;
-  font-size: auto;
+:root{
+  --font-family: "Mulish", serif;
+  
 }
+h1{
+    font-family: var(--font-family);
+    size:2rem;
+}
+
 .star-rating {
     display: flex;
     align-items: center;
