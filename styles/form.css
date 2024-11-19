@@ -1,3 +1,7 @@
+h1, p, label{
+  font-family: "Mulish", serif;
+  font-size: auto;
+}
 .star-rating {
     display: flex;
     align-items: center;
