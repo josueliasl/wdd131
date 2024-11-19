@@ -4,7 +4,7 @@
 }
 h1{
     font-family: var(--font-family);
-    size:2rem;
+    font-size:2rem;
 }
 
 .star-rating {
