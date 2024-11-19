@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,10 @@
     <script src="scripts/form.js" defer></script>
     <title>Product Review</title>
 </head>
+
 <body>
     <form action="review.html" method="get">
-            <label for="select">Select a Product ...</label>
+        <label for="select">Select a Product ...</label>
         <select id="select" disabled>
             <option value="fc-1888"></option>
             <option value="fc-2050"></option>
@@ -19,23 +21,49 @@
             <option value="ac-2000"></option>
             <option value="jj-1969"></option>
         </select>
-        <label for="stars">Overall Ratint</label>
-        <div class="star-rating" id="stars">
-            <input type="radio" name="stars" id="star-a" value="5"/>
-            <label for="star-a"></label>
-      
-            <input type="radio" name="stars" id="star-b" value="4"/>
-            <label for="star-b"></label>
-        
-            <input type="radio" name="stars" id="star-c" value="3"/>
-            <label for="star-c"></label>
-        
-            <input type="radio" name="stars" id="star-d" value="2"/>
-            <label for="star-d"></label>
-        
-            <input type="radio" name="stars" id="star-e" value="1"/>
-            <label for="star-e"></label>
-      </div>
+        <div class="stars">
+            <label for="stars">Overall Rating</label>
+            <div class="star-rating">
+                <input type="radio" name="stars" id="star-a" value="5" />
+                <label for="star-a"></label>
+
+                <input type="radio" name="stars" id="star-b" value="4" />
+                <label for="star-b"></label>
+
+                <input type="radio" name="stars" id="star-c" value="3" />
+                <label for="star-c"></label>
+
+                <input type="radio" name="stars" id="star-d" value="2" />
+                <label for="star-d"></label>
+
+                <input type="radio" name="stars" id="star-e" value="1" />
+                <label for="star-e"></label>
+            </div>
+        </div>
+        <div class="calendar">
+            <label for="installation">Date of installation:</label>
+            <input type="date" id="installation" name="installation">
+        </div>
+        <div class="checbox">
+            <label for="checkbox">Which features did you find useful in the product?<br><i>(Check all that
+                    apply)</i><br></label>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br><br>
+        </div>
+        <div>
+            <label for="review">Write your review:<span> (optional)</span></label><br>
+            <textarea type="text" id="review" value="review" rows="4"></textarea>
+        </div>
+        <div>
+            <label for="review">Type your name: <span>(optional)</span></label><br>
+            <textarea type="text" id="review" value="review" rows="1"></textarea>
+        </div>
+        <button>Post Review</button>
     </form>
 </body>
+
 </html>
