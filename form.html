@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <h1>Product Review</h1>
+    <h1>Product</h1>
     <form action="review.html" method="get">
         <label for="select">Select a Product ...</label>
         <select id="select" disabled>
@@ -46,16 +46,16 @@
             <input type="date" id="installation" name="installation">
         </div>
         <div class="checbox">
-            <label for="checkbox">Which features did you find useful in the product?<br><i>(Check all that
-                    apply)</i><br></label>
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label for="vehicle1"> I have a bike</label><br>
-            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> I have a car</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> I have a boat</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> I have a boat</label><br><br>
+            <p>Which features did you find useful in the product?<br><i>(Check all that
+                    apply)</i></p>
+            <input type="checkbox" id="durability" name="durability" value="Description">
+            <label for="durability">Durability </label><br>
+            <input type="checkbox" id="ease" name="ease" value="ease">
+            <label for="ease"> Ease of Use</label><br>
+            <input type="checkbox" id="performance" name="performance" value="performance">
+            <label for="perfromance"> Performance</label><br>
+            <input type="checkbox" id="design" name="design" value="design">
+            <label for="design"> Design</label><br><br>
         </div>
         <div>
             <label for="review">Write your review:<span> (optional)</span></label><br>
@@ -63,7 +63,7 @@
         </div>
         <div>
             <label for="review">Type your name: <span>(optional)</span></label><br>
-            <input type="text" id="review" >
+            <input type="text" id="name" >
         </div>
         <input type="submit" value="Post Review">
     </form>
