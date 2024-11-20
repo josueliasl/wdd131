@@ -5,7 +5,12 @@
 :root{
   --font-family: "Mulish", serif;
   --edges: rgb(108, 10, 108);
-  
+  --font-family: "Roboto", serif; 
+}
+body{
+  text-align: center;
+  font-size: 25px;
+  font-family: var(--font-family);
 }
 h1, footer{
     font-family: var(--font-family);
@@ -16,10 +21,16 @@ h1, footer{
     width: 100%;
 }
 h1{
-  font-size: 2rem;;
+  font-size: 2rem;
 }
 footer{
   font-size: 1rem;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  gap: 16px;
 }
 .star-rating {
     display: flex;
@@ -38,7 +49,6 @@ footer{
   .star-rating > label {
     width: 30px;
     height: 30px;
-    font-family: Arial;
     font-size: 30px;
     transition: 0.2s ease;
     color: orange;
@@ -73,3 +83,16 @@ footer{
   .span{
     color: blue;
   }
+  input{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 12px;
+  }
+  textarea{
+    border-radius: 10px;
+    padding: 40px;
+    font-size: 10px;
+    width: 80%;
+    border: solid 2px black;
+  }
+  
