@@ -8,15 +8,13 @@
   --font-family: "Roboto", serif; 
 }
 body{
-  text-align: center;
   font-size: 25px;
   font-family: var(--font-family);
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+
 }
-.everything{
-  max-width: 100%;
-  grid-column: 2/3;
+main{
+  max-width: 400px;
+  margin: 0 auto;
 }
 h1, footer{
     font-family: var(--font-family);
@@ -87,7 +85,9 @@ form{
   .star-rating input:checked ~ label:before {
     content:'\2605';
   }
-  
+ .checkbox {
+  text-align: left;
+ }
   @-moz-document url-prefix() {
     .star-rating input:checked ~ label:before {
     font-size: 36px;
