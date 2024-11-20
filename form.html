@@ -17,61 +17,67 @@
 </head>
 
 <body>
-    <h1>Product</h1>
-    <form action="review.html" method="get">
-        <label for="select">Select a Product ...</label>
-        <select id="select" disabled>
-            <option value="fc-1888"></option>
-            <option value="fc-2050"></option>
-            <option value="fs-1987"></option>
-            <option value="ac-2000"></option>
-            <option value="jj-1969"></option>
-        </select>
-        <div class="stars">
-            <p>Overall Rating</p>
-            <div class="star-rating">
-                <input type="radio" name="stars" id="star-a" value="5" />
-                <label for="star-a"></label>
+    <main>
+        <h1>Product</h1>
+        <form action="review.html" method="get">
+            <label for="select">Select a Product ...</label>
+            <select id="select" disabled>
+                <option value="fc-1888"></option>
+                <option value="fc-2050"></option>
+                <option value="fs-1987"></option>
+                <option value="ac-2000"></option>
+                <option value="jj-1969"></option>
+            </select>
+            <div class="stars">
+                <p>Overall Rating</p>
+                <div class="star-rating">
+                    <input type="radio" name="stars" id="star-a" value="5" />
+                    <label for="star-a"></label>
 
-                <input type="radio" name="stars" id="star-b" value="4" />
-                <label for="star-b"></label>
+                    <input type="radio" name="stars" id="star-b" value="4" />
+                    <label for="star-b"></label>
 
-                <input type="radio" name="stars" id="star-c" value="3" />
-                <label for="star-c"></label>
+                    <input type="radio" name="stars" id="star-c" value="3" />
+                    <label for="star-c"></label>
 
-                <input type="radio" name="stars" id="star-d" value="2" />
-                <label for="star-d"></label>
+                    <input type="radio" name="stars" id="star-d" value="2" />
+                    <label for="star-d"></label>
 
-                <input type="radio" name="stars" id="star-e" value="1" />
-                <label for="star-e"></label>
+                    <input type="radio" name="stars" id="star-e" value="1" />
+                    <label for="star-e"></label>
+                </div>
             </div>
-        </div>
-        <div class="calendar">
-            <label for="installation">Date of installation:</label>
-            <input type="date" id="installation" name="installation">
-        </div>
-        <div class="checbox">
-            <p>Which features did you find useful in the product?<br><i>(Check all that
-                    apply)</i></p>
-            <input type="checkbox" id="durability" name="durability" value="Description">
-            <label for="durability">Durability </label><br>
-            <input type="checkbox" id="ease" name="ease" value="ease">
-            <label for="ease"> Ease of Use</label><br>
-            <input type="checkbox" id="performance" name="performance" value="performance">
-            <label for="performance"> Performance</label><br>
-            <input type="checkbox" id="design" name="design" value="design">
-            <label for="design"> Design</label><br><br>
-        </div>
-        <div>
-            <label for="review">Write your review:<span> (optional)</span></label><br>
-            <textarea id="review" rows="4"></textarea>
-        </div>
-        <div>
-            <label for="review">Type your name: <span>(optional)</span></label><br>
-            <input type="text" id="name">
-        </div>
-        <input type="submit" value="Post Review">
-    </form>
+            <div class="calendar">
+                <label for="installation">Date of installation:</label>
+                <input type="date" id="installation" name="installation">
+            </div>
+            <div class="checbox">
+                <p>Which features did you find useful in the product?<br><i>(Check all that
+                        apply)</i></p>
+                <input type="checkbox" id="durability" name="durability" value="Description">
+                <label for="durability">Durability </label><br>
+                <input type="checkbox" id="ease" name="ease" value="ease">
+                <label for="ease"> Ease of Use</label><br>
+                <input type="checkbox" id="performance" name="performance" value="performance">
+                <label for="performance"> Performance</label><br>
+                <input type="checkbox" id="design" name="design" value="design">
+                <label for="design"> Design</label><br><br>
+            </div>
+            <div>
+                <label for="review">Write your review:<span class="span"> (optional)</span></label><br>
+                <textarea id="review" rows="4"></textarea>
+            </div>
+            <div>
+                <label for="review">Type your name: <span class="span">(optional)</span></label><br>
+                <input type="text" id="name">
+            </div>
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p><span id="currentYear"></span> Josue Leyva, Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>

@@ -1,12 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 :root{
   --font-family: "Mulish", serif;
+  --edges: rgb(108, 10, 108);
   
 }
-h1{
+h1, footer{
     font-family: var(--font-family);
-    font-size:2rem;
+    background-color: var(--edges);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
 }
-
+h1{
+  font-size: 2rem;;
+}
+footer{
+  font-size: 1rem;
+}
 .star-rating {
     display: flex;
     align-items: center;
@@ -56,6 +70,6 @@ h1{
     line-height: 21px;
     }
   }  
-  span{
+  .span{
     color: blue;
   }
