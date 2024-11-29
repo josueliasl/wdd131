@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Josue Elias Leyva Gonzalez">
+  <meta name="description"
+    content="Golden Petals embodies elegance and craftsmanship, combining timeless beauty with delicate, nature-inspired artistry to create a memorable brand identity focused on high-quality jewelry. In this form our users are able to purchase our products">
+  <title>Golden Petals</title>
+  <script src="scripts/form.js" defer></script>
+  <link rel="stylesheet" href="styles/final_project.css">
+  <link rel="stylesheet" href="styles/final_project_big.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.webp" loading='lazy' alt="logo" width="100">
+    <h1>Golden Petals</h1>
+    <a id="menu" href="#"></a>
+    <nav>
+      <ul class="navigation">
+        <li><a href="final_project.html">Home</a></li>         
+            <li><a href="car.html"> 🛒</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 id="purchase_h1">Purchase your Jewerlies</h1>
+    <div id="form">
+      <form>
+
+        <fieldset>
+          <legend><strong>Contact Information</strong></legend><br>
+          <label for="cardHolder">Card holder's name<span class="character">*</span></label><br>
+          <input type="text" id="cardHolder" name="cardHolder" placeholder="Only card holder's name" required><br><br>
+          <label for="address">Address<span class="character">*</span></label><br>
+          <input type="text" id="address" name="address" placeholder="Type your address" required><br><br>
+          <label for="email">Email<span class="character">*</span></label><br>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend><strong>Payment information</strong></legend><br>
+          <label for="cardNumber">Type your card Number<span class="character">*</span></label><br>
+          <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9101 1121" maxlength="19"
+            required><br><br>
+          <label for="expiration">Expiration date<span class="character">*</span></label><br>
+          <input type="month" id="expiration" name="expiration" required><br><br>
+          <label for="cvv">cvv<span class="character">*</span></label><br>
+          <input type="number" id="cvv" name="cvv" maxlength="3" placeholder="123" required><br><br>
+        </fieldset>
+
+        <button id="purchase_my_jewerlies" class="purchase-but">Purchase my Jewerlies</button>
+
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p id="currentYear"></p>
+    <div>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+    </div>
+  </footer>
+</body>
+
+</html>
