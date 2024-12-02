@@ -1,9 +1,11 @@
 const table = document.createElement('table');
 
-if(!localStorage.getItem('cart')){
+const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+if (cart.length === 0) {
     alert('Please add an item to the cart first.');
     document.location.href = 'final_project.html';
-}else{
+} else {
     const cart = JSON.parse(localStorage.getItem('cart'));
 
     let total = 0;
@@ -18,9 +20,9 @@ if(!localStorage.getItem('cart')){
     tr.appendChild(priceTitle);
 
     table.appendChild(tr);
-    
-    
-    cart.forEach(jewerly =>{
+
+
+    cart.forEach(jewerly => {
         const tr = document.createElement('tr');
         const name = document.createElement('td');
         const price = document.createElement('td');
@@ -46,19 +48,19 @@ if(!localStorage.getItem('cart')){
             localStorage.setItem('cart', JSON.stringify(cart));
 
             tr.remove();
-            total -=parseFloat(jewerly.cost);
+            total -= parseFloat(jewerly.cost);
             totalAmount.innerHTML = `<strong>${total}</strong>`;
 
             console.log(cart.length);
 
-            if (cart.length === 0){
+            if (cart.length === 0) {
                 alert('Your cart is empty. Redirecting to the home page');
                 document.location.href = 'final_project.html'
             }
- 
+
         });
         deleteButton.dataset.name = jewerly.name;
-        
+
 
         name.textContent = jewerly.name;
         price.textContent = jewerly.cost;
@@ -66,13 +68,21 @@ if(!localStorage.getItem('cart')){
         tr.appendChild(name);
         tr.appendChild(price);
         tr.appendChild(deleteAppended);
-        
+
         table.appendChild(tr);
 
         total += parseFloat(jewerly.cost);
 
-        
 
+
+    });
+
+    const mainnav = document.querySelector('.navigation')
+    const hambutton = document.querySelector('#menu');
+
+    hambutton.addEventListener('click', () => {
+        mainnav.classList.toggle('show');
+        hambutton.classList.toggle('show');
     });
 
     let final_total = document.createElement('tr');
