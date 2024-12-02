@@ -1,4 +1,57 @@
-@media  (min-width:520px) {
+@media  (min-width:450px) {
+    .jewerlies{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+        text-align: center;
+
+    }
+    .jewerlies img{
+        width: 150px;
+        height: 150px;
+    }
+
+}
+@media  (min-width:710px) {
+    .jewerlies{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+        text-align: center;
+
+    }
+    .jewerlies img{
+        width: 250px;
+        height: 250px;
+    }
+
+}
+@media  (min-width:900px) {
+    .jewerlies{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+        text-align: center;
+
+    }
+    .jewerlies img{
+        width: 300px;
+        height: 300px;
+    }}
+    @media  (min-width:1010px) {
+        .jewerlies{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-content: center;
+            text-align: center;
+    
+        }
+        .jewerlies img{
+            width: 380px;
+            height: 380px;
+        }
+}
+@media  (min-width:1150px) {
     .navigation{
         font-size: 20px;
         display: flex;
