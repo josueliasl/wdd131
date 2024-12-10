@@ -178,7 +178,7 @@ const jewerlies = [
         description: "",
         cost: '',
         imageUrl:
-            "https://cdn.shopify.com/s/files/1/1213/7282/products/huipil_negro_largo-1_530x@2x.jpg?v=1552968685"
+            "https://http2.mlstatic.com/D_NQ_NP_995755-MLM44013210127_112020-F.jpg"
     },
     { 
         name: "",
@@ -269,58 +269,253 @@ const jewerlies = [
         description: "",
         cost: '',
         imageUrl:
-            ""
+            "https://th.bing.com/th/id/OIP.W0K8kgkUh_z7hkBx1IjrlgHaLG?pid=ImgDet&w=202&h=303&c=7&dpr=1.5"
     },
     { 
         name: "",
         description: "",
         cost: '',
         imageUrl:
-            ""
+            "https://th.bing.com/th/id/OIP.nf8qcWpfdk5_biJBIJQMOQHaLH?pid=ImgDet&w=202&h=303&c=7&dpr=1.5"
     },
     { 
         name: "",
         description: "",
         cost: '',
         imageUrl:
-            ""
+            "https://th.bing.com/th/id/OIP.SXixqSo6WaTsDaD7rENvygHaLG?pid=ImgDet&w=202&h=303&c=7&dpr=1.5"
     },
     { 
         name: "",
         description: "",
         cost: '',
         imageUrl:
-            ""
+            "https://th.bing.com/th/id/OIP.UxXEMJHTRw0a_pFIQ48mUAHaHa?pid=ImgDet&w=202&h=202&c=7&dpr=1.5"
     },
     { 
         name: "",
         description: "",
         cost: '',
         imageUrl:
-            ""
+            "https://th.bing.com/th/id/OIP.IRZk_I67TruUXvobU7TbnwHaHo?pid=ImgDet&w=202&h=208&c=7&dpr=1.5"
     },
     { 
         name: "",
         description: "",
         cost: '',
         imageUrl:
-            ""
+            "https://th.bing.com/th/id/OIP.SNILOS2L1BlTFpPDcx6-EQHaKX?pid=ImgDet&w=202&h=283&c=7&dpr=1.5"
     },
     { 
         name: "",
         description: "",
         cost: '',
         imageUrl:
-            ""
+            "https://th.bing.com/th/id/OIP.sT7HHYVzBdhvoiVPcxBxxAHaLH?pid=ImgDet&w=202&h=303&c=7&dpr=1.5"
     },
     { 
         name: "",
         description: "",
         cost: '',
         imageUrl:
-            ""
+            "https://th.bing.com/th/id/OIP.EWjHfep7YoDfZmxCozikZAHaLH?pid=ImgDet&w=202&h=303&c=7&dpr=1.5"
     },
-    
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.jacYpjCoIURTmemEyrrcFAHaLN?w=194&h=293&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.zqvzpzKACZ--OYn8Q2XDBQHaMP?w=194&h=321&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://images-na.ssl-images-amazon.com/images/I/81E0t51zdYL._SL1500_.jpg"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.yLsOFXjOcf5cUct62IIFXgHaLN?w=194&h=293&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://i.pinimg.com/originals/ae/c9/bf/aec9bf6fb9a630c23942427047f335ba.jpg"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://i.pinimg.com/originals/0c/5d/98/0c5d9827a32476d256231443dbf0433e.jpg"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://img.artlogic.net/w_820,h_700,c_limit/exhibit-e/5b1e98ae6aa72cad108b4567/dac1e38e9673a75632ea60af6ed13730.jpeg"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.laM8fuTzivUGNagHxgNxOAAAAA?pid=ImgDet&w=192&h=325&c=7&dpr=1.5"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.T6_tN5-BShBbyA2DYid2HwHaM8?pid=ImgDet&w=189&h=331&c=7&dpr=1.5"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.G3u-cZS0vrpEVahkAx2XnwHaHa?rs=1&pid=ImgDetMain"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.O0PLIPX_aEDrfW_iZqi3vgHaJ6?pid=ImgDet&w=202&h=270&c=7&dpr=1.5"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.9mSKxj2fnHIqeTozBbDKtAHaHa?pid=ImgDet&w=202&h=202&c=7&dpr=1.5"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://i.pinimg.com/originals/03/ff/e2/03ffe25c1f1508b5d4eff8d0a4e69102.jpg"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.PUBeNIa5IrH6Vjf5gh0A6AHaJ3?w=149&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.6TUgqs8MplxKcjnAZs2ssAHaJ1?w=138&h=184&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.-EIug8dCNFUrEodB4fojLAHaE6?w=268&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.R-J0OfzJxC-SEhIWQrafzAHaLH?w=145&h=217&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.nHAE8H79xbQOslgK3LJyFQAAAA?w=144&h=217&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.EUielkem0IZcHQFi_nWRqgHaF1?w=252&h=185&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.C4FBlnAjf-VdnQuHUpJYRAHaE8?w=302&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.kNbcKF1-9WDd7IujExIiGgHaHa?w=204&h=204&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.Hj6MrYQBckCwPqz_Tc2xmQAAAA?pid=ImgDet&w=202&h=283&c=7&dpr=1.5"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.sAlyqJqRSNzq7G-Tl59-IAHaL3?w=123&h=189&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.NEujfwA1WzCRiHT-TSfLgAHaNK?w=115&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.y7i5ii4ZzGLwKK3OP8Ab9AAAAA?w=115&h=173&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.Sl2ImxOSjNXkldhOp85cYwHaEK?w=311&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.BWFSvVipYuYxdGmxIrWLRwHaHa?w=167&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    { 
+        name: "",
+        description: "",
+        cost: '',
+        imageUrl:
+            "https://th.bing.com/th/id/OIP.EK2MYHhzKmEQ569CTj3RcwAAAA?w=276&h=183&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
 ]  
 
 createjewerlyCard(jewerlies);

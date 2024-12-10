@@ -18,7 +18,7 @@ header{
     background-color: var(--color3);
     color: var(--color2);
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 10px;
 }
