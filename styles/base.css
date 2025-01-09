@@ -1,9 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Afacad Flux';
-    font-style: normal;
-    font-weight: 100 1000;
+
+}
+body{
+    font-family: 'Mulish', sans-serif;
 }
 h1 {
     background-color: steelblue;
@@ -26,8 +27,8 @@ nav{
 nav a{
     text-decoration: none;
     color: white;
-    font-family: "Mulish", sans-serif;
-    font-size: larger;
+    font-family: 'Afacad Flux', serif;
+    
     align-items: center;
 }
 nav a:hover{
@@ -51,7 +52,7 @@ main{
     padding: 15px;
 }
 h2{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Afacad Flux', serif;
     background-color: steelblue;
     text-align: center;
     grid-row: 1/2;
@@ -82,8 +83,7 @@ footer{
     align-items: center;
     justify-content: center;
     padding: 20px;
-    font-size: larger;
-    font-family: "Mulish", sans-serif;
+    font-family: 'Afacad Flux', serif;
 }
 #lastModified{
     color:yellow;
