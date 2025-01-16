@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+:root{
+    --main-color: rgb(64, 22, 103);
+}
+header{
+    background-color: var(--main-color);
+    color: white;
+    padding: 30px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+}
+h1{
+    font-size: 1.5em;
+}
+nav{
+    background-color: var(--main-color);
+}
+.navigation{
+    list-style: none;
+    margin: 0 auto;
+    max-width: 549px;
+}
+nav li{
+    display: none;
+}
+.navigation a{
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+.navigation a:hover, .navigation a:active{
+    color: var(--main-color);
+    background-color: white;
+}
+.show li{
+    display: block;
+}
+#menu.show::before{
+    content: 'X';
+}
+h2{
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+figure img{
+    max-width: 300px;
+}
+figcaption{
+    text-align: center;
+    color: rgb(70, 19, 117);
+    font-size: larger;
+}
+footer{
+    background-color: var(--main-color);
+    color: white;
+    font-size: large;
+    padding: 10px;
+    text-align: center;
+}
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: var(--main-color);
+	color: white;
+}
+#menu::before {
+    content: "≡";
+}
