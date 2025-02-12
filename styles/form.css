@@ -44,6 +44,9 @@ form{
   color: black;
   background-color: rgb(220, 217, 217);
 }
+.character{
+  color:rgb(197, 12, 12)
+}
 .star-rating {
     display: flex;
     align-items: center;

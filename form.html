@@ -21,12 +21,12 @@
         <main>
             <h1>Product</h1>
             <form action="review.html" method="get">
-                <label for="select">Select a Product <span>*</span></label>
-                <select id="select" disabled>
+                <label for="select">Select a Product <span class = 'character'>*</span></label>
+                <select id="select" disabled required>
                     <option value="">Select a Product</option>
                 </select>
                 <div class="stars">
-                    <p>Overall Rating <span>*</span></p>
+                    <p>Overall Rating <span class = 'character'>*</span></p>
                     <div class="star-rating">
                         <input type="radio" name="stars" id="star-a" value="5" required />
                         <label for="star-a"></label>
@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div class="calendar">
-                    <label for="installation">Date of installation: <span>*</span></label>
+                    <label for="installation">Date of installation: <span class = 'character'>*</span></label>
                     <input type="date" id="installation" name="installation" required>
                 </div>
                 <div class="checbox">
